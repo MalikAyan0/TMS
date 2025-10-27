@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "job": "Container Shipping - Port to Warehouse",
+      "doc_date": "2024-01-15",
+      "party": "ABC Logistics Ltd",
+      "nature": "Import",
+      "company_name": "Global Trade Co.",
+      "revenue": "$15,500.00",
+      "expense": "$12,000.00",
+      "net_profit": "$3,500.00"
+    },
+    {
+      "id": 2,
+      "job": "Heavy Machinery Transport",
+      "doc_date": "2024-01-18",
+      "party": "XYZ Industries",
+      "nature": "Export",
+      "company_name": "Industrial Solutions Inc.",
+      "revenue": "$28,750.00",
+      "expense": "$22,400.00",
+      "net_profit": "$6,350.00"
+    },
+    {
+      "id": 3,
+      "job": "Refrigerated Goods Transport",
+      "doc_date": "2024-01-20",
+      "party": "Fresh Foods Corp",
+      "nature": "Domestic",
+      "company_name": "Cold Chain Logistics",
+      "revenue": "$18,200.00",
+      "expense": "$14,800.00",
+      "net_profit": "$3,400.00"
+    },
+    {
+      "id": 4,
+      "job": "Automotive Parts Delivery",
+      "doc_date": "2024-01-22",
+      "party": "AutoMax Manufacturing",
+      "nature": "Import",
+      "company_name": "Speed Delivery Services",
+      "revenue": "$12,300.00",
+      "expense": "$9,500.00",
+      "net_profit": "$2,800.00"
+    },
+    {
+      "id": 5,
+      "job": "Bulk Cargo Transport",
+      "doc_date": "2024-01-25",
+      "party": "Maritime Shipping Co.",
+      "nature": "Export",
+      "company_name": "Ocean Freight Ltd",
+      "revenue": "$35,000.00",
+      "expense": "$28,500.00",
+      "net_profit": "$6,500.00"
+    },
+    {
+      "id": 6,
+      "job": "Electronics Shipment",
+      "doc_date": "2024-01-28",
+      "party": "Tech Solutions Inc",
+      "nature": "Import",
+      "company_name": "Digital Express",
+      "revenue": "$22,100.00",
+      "expense": "$17,800.00",
+      "net_profit": "$4,300.00"
+    },
+    {
+      "id": 7,
+      "job": "Pharmaceutical Transport",
+      "doc_date": "2024-02-01",
+      "party": "MedSupply Corp",
+      "nature": "Domestic",
+      "company_name": "Safe Transport Ltd",
+      "revenue": "$19,800.00",
+      "expense": "$15,200.00",
+      "net_profit": "$4,600.00"
+    },
+    {
+      "id": 8,
+      "job": "Textile Goods Delivery",
+      "doc_date": "2024-02-03",
+      "party": "Fashion Forward Ltd",
+      "nature": "Export",
+      "company_name": "Fabric Express",
+      "revenue": "$16,400.00",
+      "expense": "$13,100.00",
+      "net_profit": "$3,300.00"
+    },
+    {
+      "id": 9,
+      "job": "Construction Materials",
+      "doc_date": "2024-02-05",
+      "party": "BuildCorp Industries",
+      "nature": "Domestic",
+      "company_name": "Heavy Haul Transport",
+      "revenue": "$31,200.00",
+      "expense": "$25,600.00",
+      "net_profit": "$5,600.00"
+    },
+    {
+      "id": 10,
+      "job": "Chemical Products Transport",
+      "doc_date": "2024-02-08",
+      "party": "ChemTech Solutions",
+      "nature": "Import",
+      "company_name": "Hazmat Logistics",
+      "revenue": "$24,700.00",
+      "expense": "$19,900.00",
+      "net_profit": "$4,800.00"
+    }
+  ]
+}

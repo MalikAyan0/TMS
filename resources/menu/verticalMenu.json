@@ -1,0 +1,304 @@
+{
+  "menu": [
+    {
+      "url": "/",
+      "name": "Home",
+      "icon": "menu-icon icon-base ti tabler-smart-home",
+      "slug": "pages-home"
+    },
+    {
+      "url": "/bails",
+      "name": "BL",
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "slug": "bl",
+      "permission": "bl.manage"
+    },
+    {
+      "url": "/cros",
+      "name": "CRO",
+      "icon": "menu-icon icon-base ti tabler-file-text",
+      "slug": "cro",
+      "permission": "cro.manage"
+    },
+    {
+      "name": "Import",
+      "icon": "menu-icon icon-base ti tabler-briefcase",
+      "slug": "import",
+      "permission": "import.manage",
+      "submenu": [
+        {
+          "url": "/jobs",
+          "name": "Job Queue",
+          "icon": "menu-icon icon-base ti tabler-clipboard-list",
+          "slug": "jobs.index",
+          "permission": "import.create"
+        },
+        {
+          "url": "/logistics",
+          "name": "Logistics Jobs",
+          "icon": "menu-icon icon-base ti tabler-truck",
+          "slug": "jobs.logistics.index",
+          "permission": "import.logistics"
+        },
+        {
+          "url": "/empty-returns",
+          "name": "Empty Returns",
+          "icon": "menu-icon icon-base ti tabler-rotate-clockwise",
+          "slug": "jobs.empty-returns.index",
+          "permission": "import.empty-returns"
+        }
+      ]
+    },
+    {
+      "name": "Export",
+      "icon": "menu-icon icon-base ti tabler-briefcase",
+      "slug": "export",
+      "permission": "export.manage",
+      "submenu": [
+        {
+          "url": "/export-jobs",
+          "name": "Export Jobs",
+          "icon": "menu-icon icon-base ti tabler-clipboard-list",
+          "slug": "export-jobs.index",
+          "permission": "export.create"
+        },
+        {
+          "url": "/export-logistics",
+          "name": "Export Logistics",
+          "icon": "menu-icon icon-base ti tabler-truck",
+          "slug": "export-logistics.index",
+          "permission": "export.logistics"
+        },
+        {
+          "url": "/loaded-returns",
+          "name": "Loaded Returns",
+          "icon": "menu-icon icon-base ti tabler-rotate-clockwise",
+          "slug": "loaded-returns.index",
+          "permission": "export.loaded-returns"
+        }
+      ]
+    },
+    {
+      "url": "/fuel-manager",
+      "name": "Fuel Manager",
+      "icon": "menu-icon icon-base ti tabler-gas-station",
+      "slug": "fuel-manager.index",
+      "permission": "fuelPayment.manage"
+    },
+    {
+      "url": "/fuel-tanks",
+      "name": "Fuel Tanks",
+      "icon": "menu-icon icon-base ti tabler-barrel",
+      "slug": "fuel-tanks.index",
+      "permission": "fuel-tank.manage"
+    },
+    {
+      "name": "Fuel Management",
+      "icon": "menu-icon icon-base ti tabler-gas-station",
+      "slug": "fuel",
+      "permission": "fuel.manage",
+      "submenu": [
+        {
+          "url": "/fuel-management",
+          "name": "Fuel Purchase",
+          "icon": "menu-icon icon-base ti tabler-gas-station",
+          "slug": "fuel-management.index",
+          "permission": "fuel.view"
+        },
+        {
+          "url": "/issuances",
+          "name": "Issuances",
+          "icon": "menu-icon icon-base ti tabler-gas-station",
+          "slug": "issuances.index"
+        }
+      ]
+    },
+    {
+      "name": "Fleets Management",
+      "icon": "menu-icon icon-base ti tabler-car",
+      "slug": "pages-fleet-management",
+      "permission": "fleet.manage",
+      "submenu": [
+        {
+          "url": "/fleets",
+          "name": "Fleets",
+          "icon": "menu-icon icon-base ti tabler-truck",
+          "slug": "fleets.index",
+          "permission": "fleet.view"
+        },
+        {
+          "url": "/fleet-types",
+          "name": "Fleet Types",
+          "icon": "menu-icon icon-base ti tabler-circle-dashed-letter-t",
+          "slug": "fleet-types.index",
+          "permission": "fleet.type.view"
+        },
+        {
+          "url": "/fleet-manufacturers",
+          "name": "Fleet Manufacturers",
+          "icon": "menu-icon icon-base ti tabler-building-factory",
+          "slug": "fleet-manufacturers.index",
+          "permission": "fleet.manufacturer.view"
+        }
+      ]
+    },
+    {
+      "url": "/routes",
+      "name": "Routes Management",
+      "icon": "menu-icon icon-base ti tabler-road",
+      "slug": "routes.index",
+      "permission": "route.manage"
+    },
+    {
+      "url": "/workshop-jobs",
+      "name": "Workshop Management",
+      "icon": "menu-icon icon-base ti tabler-engine",
+      "slug": "workshop-jobs.index",
+      "permission": "workshop.manage"
+    },
+    {
+      "name": "System Management",
+      "icon": "menu-icon icon-base ti tabler-settings",
+      "slug": "pages-system-management",
+      "permission": "system-managements.manage",
+      "submenu": [
+        {
+          "url": "/users-status",
+          "name": "User Status",
+          "icon": "menu-icon icon-base ti tabler-users",
+          "slug": "users-status.index",
+          "permission": "system-managements.user-status.view"
+        },
+        {
+          "url": "/locations",
+          "name": "Locations",
+          "icon": "menu-icon icon-base ti tabler-map-pin",
+          "slug": "locations.index",
+          "permission": "system-managements.location.view"
+        },
+        {
+          "url": "/ports",
+          "name": "Ports",
+          "icon": "menu-icon icon-base ti tabler-anchor",
+          "slug": "ports.index"
+        },
+        {
+          "url": "/terminals",
+          "name": "Terminals",
+          "icon": "menu-icon icon-base ti tabler-building-warehouse",
+          "slug": "terminals.index"
+        },
+        {
+          "url": "/lines",
+          "name": "Lines",
+          "icon": "menu-icon icon-base ti tabler-line",
+          "slug": "lines.index"
+        },
+        {
+          "url": "/pods",
+          "name": "PODs",
+          "icon": "menu-icon icon-base ti tabler-box",
+          "slug": "pods.index"
+        },
+        {
+          "url": "/operations",
+          "name": "Operations",
+          "icon": "menu-icon icon-base ti tabler-automation",
+          "slug": "operations.index",
+          "permission": "system-managements.operation.view"
+        },
+        {
+          "url": "/fuel-types",
+          "name": "Fuel Types",
+          "icon": "menu-icon icon-base ti tabler-gas-station",
+          "slug": "fuel-types.index",
+          "permission": "system-managements.fuel-type.view"
+        },
+        {
+          "url": "/oil-types",
+          "name": "Oil Types",
+          "icon": "menu-icon icon-base ti tabler-drop-circle",
+          "slug": "oil-types.index",
+          "permission": "system-managements.oil-type.view"
+        },
+        {
+          "url": "/projects",
+          "name": "Projects",
+          "icon": "menu-icon icon-base ti tabler-briefcase",
+          "slug": "projects.index",
+          "permission": "system-managements.project.view"
+        },
+        {
+          "url": "/nature-of-accounts",
+          "name": "Nature of Accounts",
+          "icon": "menu-icon icon-base ti tabler-file-text",
+          "slug": "nature-of-accounts.index",
+          "permission": "system-managements.nature-of-account.view"
+        },
+        {
+          "url": "/chart-of-accounts",
+          "name": "Chart of Accounts",
+          "icon": "menu-icon icon-base ti tabler-chart-bar",
+          "slug": "chart-of-accounts.index",
+          "permission": "system-managements.chart-of-account.view"
+        },
+        {
+          "url": "/jobs-types",
+          "name": "Job Types",
+          "icon": "menu-icon icon-base ti tabler-briefcase",
+          "slug": "job-types.index",
+          "permission": "system-managements.job-type.view"
+        },
+        {
+          "url": "/sales-tax-territories",
+          "name": "Sales Tax Territories",
+          "icon": "menu-icon icon-base ti tabler-map-pin",
+          "slug": "sales-tax-territories.index",
+          "permission": "system-managements.sales-tax-territory.view"
+        },
+        {
+          "url": "/companies",
+          "name": "Descriptions",
+          "icon": "menu-icon icon-base ti tabler-building",
+          "slug": "companies.index",
+          "permission": "system-managements.company.view"
+        },
+        {
+          "url": "/parties",
+          "name": "Parties",
+          "icon": "menu-icon icon-base ti tabler-users",
+          "slug": "parties.index",
+          "permission": "system-managements.party.view"
+        },
+        {
+          "url": "/banks",
+          "name": "Banks",
+          "icon": "menu-icon icon-base ti tabler-building-bank",
+          "slug": "banks.index",
+          "permission": "system-managements.bank.view"
+        },
+        {
+          "url": "/container-sizes",
+          "name": "Container Sizes",
+          "icon": "menu-icon icon-base ti tabler-box",
+          "slug": "container-sizes.index",
+          "permission": "system-managements.container-size.view"
+        },
+        {
+          "url": "/voucher-types",
+          "name": "Voucher Types",
+          "icon": "menu-icon icon-base ti tabler-file-text",
+          "slug": "voucher-types.index",
+          "permission": "system-managements.voucher-type.view"
+        }
+      ]
+    },
+    {
+      "url": "/roles",
+      "name": "Roles & Permissions",
+      "icon": "menu-icon icon-base ti tabler-lock",
+      "slug": "roles.index",
+      "permission": "role.manage"
+    }
+  ]
+}

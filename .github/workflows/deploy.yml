@@ -1,0 +1,50 @@
+name: Deploy Laravel App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to VPS via SSH
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            set -e
+            cd /var/www/tms
+
+            echo "Resetting to origin/main"
+            git fetch --all
+            git reset --hard origin/main
+
+            echo "Composer install"
+            composer install --no-interaction --prefer-dist --optimize-autoloader
+
+            echo "Node build"
+            if [ -f package.json ]; then
+              npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+              npm run build --force
+            fi
+
+            echo "Migrate and clear caches"
+            php artisan migrate --force
+            php artisan config:clear
+            php artisan cache:clear
+            php artisan view:clear
+            php artisan route:clear
+
+            echo "Restart php-fpm and nginx"
+            sudo systemctl restart php8.3-fpm || true
+            sudo systemctl restart nginx || true
+
+            echo "Deployment complete: $(date)"
